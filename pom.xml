@@ -13,6 +13,8 @@
         <module>compute-service</module>
         <module>ribbon-client</module>
         <module>eureka-feign</module>
+        <module>config-server</module>
+        <module>config-client</module>
     </modules>
 
 
