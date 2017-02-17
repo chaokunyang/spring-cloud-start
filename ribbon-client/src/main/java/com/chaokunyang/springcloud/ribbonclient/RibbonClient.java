@@ -14,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-@EnableCircuitBreaker
+@EnableCircuitBreaker // 开启断路器功能
 public class RibbonClient {
 
     @Bean
