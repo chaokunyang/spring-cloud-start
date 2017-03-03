@@ -13,8 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RefreshScope
 public class TestController {
-    @Value("${from}")
+    //@Value("${from}")
     private String from;
+
+    @Value("${canDir}")
+    private String canDir;
 
     @RequestMapping(value = "/from", method = RequestMethod.GET)
     public String from() {
@@ -25,7 +28,8 @@ public class TestController {
         return from;
     }
 
-    public void setFrom(String from) {
-        this.from = from;
+    @RequestMapping(value = "/canDir", method = RequestMethod.GET)
+    public String getCanDir() {
+        return canDir;
     }
 }
