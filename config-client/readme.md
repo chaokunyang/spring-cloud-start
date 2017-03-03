@@ -17,3 +17,5 @@ spring.cloud.config.uri：配置中心的地址
 解决方案：
 在Config Server中也引入Spring Cloud Bus，将配置服务端也加入到消息总线中来。
 /bus/refresh请求不在发送到具体服务实例上，而是发送给Config Server，并通过destination参数来指定需要更新配置的服务或实例。
+
+bootstrap配置也可以使用profile
