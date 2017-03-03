@@ -28,7 +28,7 @@ public class TestController {
         return from;
     }
 
-    @RequestMapping(value = "/canDir", method = RequestMethod.GET)
+    @RequestMapping(value = "/canNotDir", method = RequestMethod.GET)
     public String getCanDir() {
         return canDir;
     }
